@@ -1,0 +1,24 @@
+{
+  "name": "boiler-plate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Shim-sim/boiler-plate.git"
+  },
+  "author": "shim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shim-sim/boiler-plate/issues"
+  },
+  "homepage": "https://github.com/Shim-sim/boiler-plate#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.6"
+  }
+}
