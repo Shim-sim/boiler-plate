@@ -4,6 +4,8 @@ const port = 3000
 const bodyParser = require('body-parser');
 const { User } = require("./models/User")
 
+const config = require('./config/key');
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -11,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://shim:abcd1234@boilerplate.9nsez.mongodb.net/?retryWrites=true&w=majority',{
+mongoose.connect(config.mongoURI,{
 	
 }).then(()=> console.log('Modb Connect'))
 	.catch(err => console.log(err))
