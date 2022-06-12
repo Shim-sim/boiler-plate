@@ -16,7 +16,7 @@ mongoose.connect('mongodb+srv://shim:abcd1234@boilerplate.9nsez.mongodb.net/?ret
 }).then(()=> console.log('Modb Connect'))
 	.catch(err => console.log(err))
 
-app.get('/', (req, res) => { res.send('nodemon 설치완료')})
+app.get('/', (req, res) => { res.send('nodemon dd설치완료')})
 
 app.post('/register', (req,res) => {
 	//회원 가입 할때 필요한 정보들을 client에서 사져오면
