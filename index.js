@@ -34,6 +34,6 @@ app.post('/register', (req,res) => {
 	})
 
 
-//테마지막
+//테스트
 
 app.listen(port, ()=> console.log('my first backend-server'))
