@@ -8,8 +8,6 @@ const config = require('./config/key');
 
 
 app.use(bodyParser.urlencoded({extended: true}));
-
-
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose')
@@ -18,10 +16,10 @@ mongoose.connect(config.mongoURI,{
 }).then(()=> console.log('Modb Connect'))
 	.catch(err => console.log(err))
 
-app.get('/', (req, res) => { res.send('nodemon dd설치완료')})
+app.get('/', (req, res) => { res.send('노드몬으로 실행했음')})
 
 app.post('/register', (req,res) => {
-	//회원 가입 할때 필요한 정보들을 client에서 사져오면
+	//회원 가입 할때 필요한 정보들을 client에서 가져오면
 	//그것들을 db에 넣어준다.
 		const user = new User(req.body)
 		
@@ -34,6 +32,6 @@ app.post('/register', (req,res) => {
 	})
 
 
-//테스트
+
 
 app.listen(port, ()=> console.log('my first backend-server'))
